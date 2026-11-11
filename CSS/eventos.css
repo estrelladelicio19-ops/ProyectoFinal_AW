@@ -28,11 +28,10 @@ body{
 
 .logo{
   position: fixed;
-  top: 6px;
+  top: 16px;
   left: 60px;
-  height: 80px;
-  display: flex;
-  align-items: center;
+  height: 70px;
+  width: auto;
   z-index: 1002;
   transition: 0.4s;
 }
@@ -535,6 +534,12 @@ nav a { text-decoration: none; color: rgb(0, 0, 0); font-weight: bold; }
 
 @media(max-width:768px){
 
+    .logo{
+        top:23px;
+        left:20px;
+        height:55px;
+    }
+
     .menu-bar{
 
         height:80px;
@@ -665,4 +670,3 @@ nav a { text-decoration: none; color: rgb(0, 0, 0); font-weight: bold; }
 
     }
 }
-
