@@ -7,9 +7,9 @@
 body {
     background: radial-gradient(
         circle at top,
-        #f8fbff 0%,
+        #4e86cf 0%,
         #eef4fa 42%,
-        #f7f8fb 100%
+        #4e71d8 100%
     );
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #1f2937;
@@ -223,11 +223,11 @@ header {
     position: relative;
     height: 520px;
     background:
-        linear-gradient(180deg, rgba(15, 23, 42, 0.12), rgba(15, 23, 42, 0.08)),
-        url("../MEDIA/IMAGENES/fondo\ baner.jpg") center/cover no-repeat;
+        linear-gradient(180deg, rgba(2, 27, 85, 0.12), rgba(8, 32, 87, 0.08)),
+        url("../MEDIA/IMAGENES/fondodegalery.jpg") center/cover no-repeat;
     border-radius: 32px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.14);
+    box-shadow: 0 30px 60px rgba(20, 42, 94, 0.14);
 }
 
 header::before {
