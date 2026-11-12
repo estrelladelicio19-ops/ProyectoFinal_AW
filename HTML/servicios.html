@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -18,11 +18,9 @@
             <img src="../MEDIA/IMAGENES/LOGOM.png" alt="Logo" class="logo">
 
             <div class="tituloMenu">
-                <h1>Servicios del Hotel: "El Gran Marqués"</h1>
+                <h1>Categorias: "Tech"</h1>
             </div>
             <div class="contenedor-navegacion">
-
-                </button>
 
                 <nav class="menu-bar">
                     <div class="hamburguesa">
@@ -36,11 +34,10 @@
                         <li class="desplegable">
                             <a href="servicios.html">Categorias</a>
                             <ul class="submenu">
-                                <li><a href="#familia">Computación y Laptos</a></li>
-                                <li><a href="#Turistas">Celurares y Tablets</a></li>
-                                <li><a href="#DiasEspeciales">Gaming</a></li>
-                                <li><a href="#DiasEspeciales">Smart Home y Oficina</a></li>
-
+                                <li><a href="#computacion">Computación y Laptos</a></li>
+                                <li><a href="#celulares">Celurares y Tablets</a></li>
+                                <li><a href="#gaming">Gaming</a></li>
+                                <li><a href="#smarthome">Smart Home y Oficina</a></li>
                             </ul>
                         </li>
                         <li><a href="Galeria.html">Nuestras Tiendas</a></li>
@@ -55,233 +52,460 @@
                             </ul>
                         </li>
                     </ul>
+                </nav>
             </div>
 
         </div>
     </header>
 
-    <main>
-        <!-- Botones de categoría -->
-        <div class="category-buttons-container">
-            <a href="#categoria1" class="btn-category">Categoría 1</a>
-            <a href="#categoria2" class="btn-category">Categoría 2</a>
-            <a href="#categoria3" class="btn-category">Categoría 3</a>
-            <a href="#categoria4" class="btn-category">Categoría 4</a>
-        </div>
+    <main class="contenedor-principal">
+        <!-- Botones reales arriba centrados con conexión por ID -->
+        <section class="seccion-botones-superior">
+            <button class="btn-cat-top" onclick="document.getElementById('computacion').scrollIntoView({behavior: 'smooth'});">Computación y Laptos</button>
+            <button class="btn-cat-top" onclick="document.getElementById('celulares').scrollIntoView({behavior: 'smooth'});">Celurares y Tablets</button>
+            <button class="btn-cat-top" onclick="document.getElementById('gaming').scrollIntoView({behavior: 'smooth'});">Gaming</button>
+            <button class="btn-cat-top" onclick="document.getElementById('smarthome').scrollIntoView({behavior: 'smooth'});">Smart Home y Oficina</button>
+        </section>
 
-        <!-- Contenedor de las Secciones de Productos -->
-        <div class="sections-container">
+        <!-- Sección 1: Computación y Laptos -->
+        <section id="computacion" class="seccion-categoria">
+            <h2>Computación y Laptos</h2>
+            <div class="grid-productos">
+                <article class="card-producto">
+                    <span class="marca">APPLE</span>
+                    <h3>Apple MacBook Air M2 (13.6", 8GB RAM, 256GB SSD)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat1-1.webp" alt="MacBook Air M2">
+                    </div>
+                    <p class="descripcion">Ultraportátil de alto rendimiento con chip M2, pantalla Liquid Retina y hasta 18 horas de batería. Perfecta para productividad y diseño móvil.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 2,899.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
 
-            <!-- SECCIÓN 1 -->
-            <section id="categoria1" class="category-section">
-                <h2 class="section-title">1. Categoría 1</h2>
-                <div class="products-grid">
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 1</h3>
-                            <p class="description">Descripción del producto</p>
-                            <span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 2</h3>
-                            <p class="description">Descripción del producto</p>
-                            <span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 3</h3>
-                            <p class="description">Descripción del producto</p>
-                            <span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <br>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 4</h3>
-                            <p class="description">Descripción del producto</p>
-                            <span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 5</h3>
-                            <p class="description">Descripción del producto</p>
-                            <span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 6</h3>
-                            <p class="description">Descripción del producto</p>
-                            <span class="price">$00.00</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
+                <article class="card-producto">
+                    <span class="marca">HP</span>
+                    <h3>PC de Escritorio All-in-One HP Pavilion 24" (Intel Core i7, 16GB RAM, 512GB SSD)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat1-7.webp" alt="HP Pavilion 24"">
+                    </div>
+                    <p class="descripcion">Computadora de mesa todo en uno con pantalla FHD sin bordes, cámara emergente de privacidad y gran potencia para multitarea y diseño.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 3,499.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+                <article class="card-producto">
+                    <span class="marca">LOGITECH</span>
+                    <h3>Teclado Mecánico Inalámbrico Logitech MX Mechanical</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat1-8.webp" alt="HP Pavilion 24"">
+                    </div>
+                    <p class="descripcion">Teclado de perfil bajo con interruptores táctiles silenciosos, retroiluminación inteligente y conexión multidispositivo vía Bluetooth o receptor Logi Bolt.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 649.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
 
-            <!-- SECCIÓN 2 -->
-            <section id="categoria2" class="category-section">
-                <h2 class="section-title">2. Categoría 2</h2>
-                <div class="products-grid">
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 1</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 2</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 3</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <br>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 4</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 5</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 6</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
+                <article class="card-producto">
+                    <span class="marca">LENOVO</span>
+                    <h3>Lenovo IdeaPad Slim 3i (Intel Core i5, 8GB RAM, 512GB SSD)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat1-2.webp" alt="IdeaPad Slim 3i">
+                    </div>
+                    <p class="descripcion">Laptop ligera de 15.3" IPS ideal para estudio y trabajo de oficina con procesamiento rápido y almacenamiento SSD NVMe.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 2,599.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
 
-            <!-- SECCIÓN 3 -->
-            <section id="categoria3" class="category-section">
-                <h2 class="section-title">3. Categoría 3</h2>
-                <div class="products-grid">
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 1</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 2</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 3</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <br>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 4</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 5</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 6</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
+                <article class="card-producto">
+                    <span class="marca">HP</span>
+                    <h3>HP AI 15-FD2351LA (Intel Core Ultra 5, 8GB RAM, 512GB SSD Touch)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat1-3.webp" alt="HP AI 15">
+                    </div>
+                    <p class="descripcion">Pantalla táctil de 15.6" con procesador Core Ultra optimizado para funciones de Inteligencia Artificial y multitarea fluida.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 2,799.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
 
-            <!-- SECCIÓN 4 -->
-            <section id="categoria4" class="category-section">
-                <h2 class="section-title">4. Categoría 4</h2>
-                <div class="products-grid">
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 1</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 2</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 3</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <br>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 4</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 5</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-placeholder">Img</div>
-                        <div class="card-content">
-                            <h3>Producto 6</h3>
-                            <p class="description">Descripción del producto</p><span class="price">$00.00</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
+                <article class="card-producto">
+                    <span class="marca">ACER</span>
+                    <h3>Acer Aspire Lite (AMD Ryzen 5, 8GB RAM, 512GB SSD)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat1-4.webp" alt="Acer Aspire Lite">
+                    </div>
+                    <p class="descripcion">Computadora equilibrada para uso profesional diario con gráficos integrados Radeon y diseño delgado.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 2,199.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
 
-        </div>
+                <article class="card-producto">
+                    <span class="marca">HP</span>
+                    <h3>HP ProBook 440 G9 (Intel Core i5 12va Gen, 16GB RAM, 512GB SSD)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat1-5.webp" alt="HP ProBook 440">
+                    </div>
+                    <p class="descripcion">Equipo empresarial robusto de 14" enfocado en seguridad de datos, durabilidad y trabajo corporativo.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 2,119.90</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
 
+                <article class="card-producto">
+                    <span class="marca">HP</span>
+                    <h3>HP OmniBook X 14 (AMD Ryzen AI 7, 16GB RAM, 512GB SSD OLED 2K)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat1-6.webp" alt="HP OmniBook X 14">
+                    </div>
+                    <p class="descripcion">Ultrabook premium con pantalla táctil 2K OLED, autonomía extendida y aceleración NPU para IA avanzada.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 4,299.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección 2: Celurares y Tablets -->
+        <section id="celulares" class="seccion-categoria">
+            <h2>Celurares y Tablets</h2>
+            <div class="grid-productos">
+                <article class="card-producto">
+                    <span class="marca">SAMSUNG</span>
+                    <h3>Samsung Galaxy Tab S10 FE (10.9", 8GB RAM, 128GB + S-Pen)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat2-1.webp" alt="Galaxy Tab S10 FE">
+                    </div>
+                    <p class="descripcion">Tablet de gama media-alta con resistencia al agua/polvo (IP68), stylus S-Pen incluido y pantalla de alta tasa de refresco para ilustrar o tomar notas.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 1,759.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">APPLE</span>
+                    <h3>Apple iPad 11" (11ª Gen, Chip A16, 128GB Wi-Fi)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat2-2.webp" alt="iPad 11">
+                    </div>
+                    <p class="descripcion">Pantalla Liquid Retina, chip A16 Bionic súper veloz y compatibilidad con Apple Pencil, ideal para entretenimiento y creatividad.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 1,699.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+                <article class="card-producto">
+                    <span class="marca">SAMSUNG</span>
+                    <h3>Samsung Galaxy S25 Ultra (6.9", 12GB RAM, 256GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat2-7.webp" alt="Galaxy S25 Ultra">
+                    </div>
+                    <p class="descripcion">Smartphone insignia con chasis de titanio, S-Pen integrado, cámara principal de 200 MP y funciones avanzadas de Galaxy AI.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 5,199.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">XIAOMI</span>
+                    <h3>Xiaomi Redmi Pad 2 (9.7" 2K, 4GB RAM, 128GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat2-3.webp" alt="Redmi Pad 2">
+                    </div>
+                    <p class="descripcion">Tablet económica con resolución 2K, cuatro altavoces Dolby Atmos y sistema HyperOS para streaming y aprendizaje.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 599.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">SAMSUNG</span>
+                    <h3>Samsung Galaxy Tab A11 (8.7", 4GB RAM, 64GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat2-4.webp" alt="Galaxy Tab A11">
+                    </div>
+                    <p class="descripcion">Modelo compacto y portátil de 8.7 pulgadas perfecto para lectura, videos y uso familiar diario.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 449.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+                <article class="card-producto">
+                    <span class="marca">APPLE</span>
+                    <h3>Apple iPhone 16 (6.1", 128GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat2-8.webp" alt="iPhone 16">
+                    </div>
+                    <p class="descripcion">Pantalla Super Retina XDR, chip A18 de alto rendimiento, botón de control de cámara y sistema de doble cámara Fusion de 48 MP.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 3,999.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+                <article class="card-producto">
+                    <span class="marca">LENOVO</span>
+                    <h3>Lenovo Idea Tab Pro (12.7", 8GB RAM, 256GB + Teclado + Lápiz)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat2-5.webp" alt="Idea Tab Pro">
+                    </div>
+                    <p class="descripcion">Estación de trabajo portátil completa con pantalla panorámica 3.5K, incluye funda teclado y lápiz de precisión.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 1,959.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">HUAWEI</span>
+                    <h3>Huawei MatePad 11.5 (8GB RAM, 256GB + M-Pencil + Teclado)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat2-6.webp" alt="MatePad 11.5">
+                    </div>
+                    <p class="descripcion">Tablet de alta definición con acabado metálico, software de productividad tipo PC y paquete completo de accesorios.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 1,899.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección 3: Gaming -->
+        <section id="gaming" class="seccion-categoria">
+            <h2>Gaming</h2>
+            <div class="grid-productos">
+                <article class="card-producto">
+                    <span class="marca">HP</span>
+                    <h3>HP Victus 15 (Core i5, 8GB RAM, 512GB SSD, RTX 4050 6GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat3-1.webp" alt="HP Victus 15">
+                    </div>
+                    <p class="descripcion">Laptop para juegos de entrada con pantalla FHD a 144Hz y tarjeta gráfica Nvidia con soporte DLSS 3.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 3,799.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">ASUS</span>
+                    <h3>ASUS TUF Gaming F16 (Core i7, 16GB RAM, 512GB SSD, RTX 4060 8GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat3-2.webp" alt="TUF Gaming F16">
+                    </div>
+                    <p class="descripcion">Chasis de durabilidad militar con procesamiento de alto rendimiento y sistema térmico avanzado para sesiones de juego prolongadas.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 4,899.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">LENOVO</span>
+                    <h3>Lenovo LOQ 15 (AMD Ryzen 7, 16GB RAM, 512GB SSD, RTX 4050 6GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat3-3.webp" alt="Lenovo LOQ 15">
+                    </div>
+                    <p class="descripcion">Diseño técnico agresivo, pantalla IPS anti-reflejos a 144Hz y arquitectura Zen de alto rendimiento multinúcleo.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 3,899.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">SONY</span>
+                    <h3>Consola PlayStation 5 Slim (1TB SSD, Edición con Lector de Discos)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat3-7.webp" alt="PlayStation 5">
+                    </div>
+                    <p class="descripcion">Consola de última generación con diseño estilizado, carga ultrarrápida, trazado de rayos y salida de video hasta 4K a 120Hz.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 2,599.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">ACER</span>
+                    <h3>Acer Nitro V 15 (Core i9, 32GB RAM, 512GB SSD, RTX 4060 8GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat3-4.webp" alt="Acer Nitro V 15">
+                    </div>
+                    <p class="descripcion">Potencia extrema con 32GB de RAM de fábrica y procesador Core i9 para streaming y videojuegos competitivos sin cuellos de botella.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 5,299.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">ASUS</span>
+                    <h3>ASUS ROG Strix G16 (Core i9, 16GB RAM, 1TB SSD, RTX 4070 8GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat3-5.webp" alt="ROG Strix G16">
+                    </div>
+                    <p class="descripcion">Laptop Gamer entusiasta con pantalla ROG Nebula 240Hz, iluminación RGB Aura Sync y la máxima potencia de la serie RTX 40.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 8,499.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">MSI</span>
+                    <h3>MSI Cyborg 15 (Intel Core i7, 16GB RAM, 1TB SSD, RTX 4060 8GB)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat3-6.webp" alt="MSI Cyborg 15">
+                    </div>
+                    <p class="descripcion">Chasis semi-translucido de estilo futurista, ultra delgado y con almacenamiento rápido de 1TB SSD.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 4,699.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+                <article class="card-producto">
+                    <span class="marca">SONY</span>
+                    <h3>Mando Inalámbrico Sony DualSense PS5</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat3-8.webp" alt="Sony DualSense">
+                    </div>
+                    <p class="descripcion">Controlador oficial con retroalimentación háptica inmersiva, gatillos adaptativos dinámicos, micrófono integrado y batería recargable USB-C.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 329.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección 4: Smart Home y Oficina -->
+        <section id="smarthome" class="seccion-categoria">
+            <h2>Smart Home y Oficina</h2>
+            <div class="grid-productos">
+                <article class="card-producto">
+                    <span class="marca">AMAZON</span>
+                    <h3>Amazon Echo Dot (5ta Generación)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat4-1.webp" alt="Echo Dot 5">
+                    </div>
+                    <p class="descripcion">Altavoz inteligente con Alexa incorporada, mejor calidad de audio, control por voz para dispositivos de casa y sensores de temperatura.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 239.90</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">TP-LINK</span>
+                    <h3>Foco Inteligente TP-Link Tapo L530E (Multicolor Wi-Fi)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat4-2.webp" alt="Tapo L530E">
+                    </div>
+                    <p class="descripcion">Bombilla LED RGB con ajuste de millones de colores, brillo regulable y programación por horarios mediante app o voz sin necesidad de hub.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 29.90</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">TP-LINK</span>
+                    <h3>Enchufe Inteligente TP-Link Tapo P105 (Wi-Fi)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat4-3.jpg" alt="Tapo P105">
+                    </div>
+                    <p class="descripcion">Controla el encendido/apagado remoto de cualquier electrodoméstico o lámpara desde el celular con temporizador y modo ausente.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 39.90</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">TP-LINK</span>
+                    <h3>Cámara de Seguridad Wi-Fi TP-Link Tapo C200 (Visión 360°)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat4-4.jpg" alt="Tapo C200">
+                    </div>
+                    <p class="descripcion">Cámara de vigilancia interior con rotación panorámica, detección de movimiento, visión nocturna e intercomunicador bidireccional.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 119.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">KUZLER</span>
+                    <h3>Balanza Digital Inteligente Kuzler (Wi-Fi / Bluetooth)</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat4-5.jpg" alt="Balanza Kuzler">
+                    </div>
+                    <p class="descripcion">Mide porcentaje de grasa, peso, masa muscular y registra el seguimiento de salud directamente en la app del teléfono.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 49.90</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">AMAZON</span>
+                    <h3>Amazon Echo Spot</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat4-6.webp" alt="Amazon Echo Spot">
+                    </div>
+                    <p class="descripcion">Reloj despertador inteligente con pantalla colorida, sonido vibrante y asistente Alexa para visualizar la hora, clima y controlar dispositivos Smart.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 279.90</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+               
+                <article class="card-producto">
+                    <span class="marca">GOOGLE</span>
+                    <h3> Google Nest Hub 2da Generación</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat4-7.webp" alt="Google Nest Hub">
+                    </div>
+                    <p class="descripcion">Pantalla inteligente de 7 pulgadas con Asistente de Google para controlar dispositivos del hogar, ver contenido multimedia y monitorear el sueño sin cámara.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 389.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+                <article class="card-producto">
+                    <span class="marca">XIAMOI</span>
+                    <h3>Aspiradora Robot Inteligente Xiaomi Robot Vacuum S20</h3>
+                    <div class="contenedor-img">
+                        <img src="../MEDIA/IMAGENES/cat4-8.webp" alt="Aspiradora Robot Inteligente Xiaomi">
+                    </div>
+                    <p class="descripcion">Robot aspirador y trapeador con navegación láser LDS, succión potente de 5000 Pa y mapeo inteligente controlable desde la app Xiaomi Home.</p>
+                    <div class="precio-contenedor">
+                        <span class="precio-actual">S/ 849.00</span>
+                    </div>
+                    <button class="btn-agregar">Agregar al Carro</button>
+                </article>
+
+
+
+            </div>
         </section>
     </main>
+
     <footer class="footer">
 
         <div class="footer-contenedor">
@@ -315,7 +539,7 @@
 
                     <li><a href="ofertas.html">Descuentos App</a></li>
 
-                    <li><a href="eventos.html">Soporte y Ayuda/a></li>
+                    <li><a href="contacto.html">Soporte y Ayuda</a></li>
 
                     <li><a href="contacto.html">Contacto</a></li>
 
