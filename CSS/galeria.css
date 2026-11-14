@@ -7,7 +7,7 @@
 body {
     background: radial-gradient(
         circle at top,
-        #4e86cf 0%,
+        #2e5b96 0%,
         #eef4fa 42%,
         #4e71d8 100%
     );
@@ -223,7 +223,7 @@ header {
     position: relative;
     height: 520px;
     background:
-        linear-gradient(180deg, rgba(2, 27, 85, 0.12), rgba(8, 32, 87, 0.08)),
+        linear-gradient(180deg, rgba(0, 4, 14, 0.12), rgba(0, 4, 14, 0.08)),
         url("../MEDIA/IMAGENES/fondodegalery.jpg") center/cover no-repeat;
     border-radius: 32px;
     overflow: hidden;
