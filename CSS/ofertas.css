@@ -7,7 +7,8 @@
 }
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7f8;
 }
 .barraSuperior{
   position: fixed;
@@ -40,7 +41,7 @@ body{
   transform: scale(1.05);
 }
 .contenedor-navegacion{
-   
+
     display: flex;
     margin-top: 90px;
     align-items: center;
@@ -293,135 +294,173 @@ nav a { text-decoration: none; color: rgb(0, 0, 0); font-weight: bold; }
   100% { margin-left: 0; }
 }
 
-/* TITULOS DE SECCION */
-.titulo-seccion {
-  font-size: 24px;
-  text-align: center;
-  margin: 50px 0 20px 0;
-  padding: 15px;
-  color: white;
-  border-radius: 5px;
-}
-
-.titulo-seccion.familia {
-  background:#0ea5e9; 
-}
-
-.titulo-seccion.turista {
-  background: #0ea5e9; 
-}
-.titulo-seccion.días especiales {
-  background: #0ea5e9; 
-}
-
-.fondo-dorado {
-  background: antiquewhite; 
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.fondo-celeste {
-  background: antiquewhite;
-  padding: 30px;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
+/*
+   ESTILOS DE OFERTAS 
+ */
 
 .seccion-ofertas {
   text-align: center; 
-  padding: 40px 20px; 
+  padding: 50px 20px; 
+  background-color: #f8fafc; 
 }
+
 .seccion-ofertas h1 {
-  color: #0ea5e9;  
+  color: #0f172a;  
   font-size: 32px;
-  margin-bottom: 10px;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
 
 .seccion-ofertas .subtitulo {
-  font-size: 18px;
-  color: #555;
-}
-.seccion-completa {
-    width: 100%;
-    margin-bottom: 40px;
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 40px;
 }
 
+/* TITULOS DE SECCION TECH */
+.titulo-seccion {
+  font-size: 20px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 40px auto 20px auto;
+  padding: 0 10px;
+  color: #0f172a;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-left: 4px solid #2563eb; 
+}
+
+.fondo-oscuro {
+  background: transparent;
+  padding: 0;
+}
+
+.seccion-completa {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* GRILLA DE 3 COLUMNAS */
 .grilla-ofertas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 24px;
   max-width: 1200px;
   margin: 0 auto 40px auto;
 }
 
-.card-oferta {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+/* 
+   TARJETA DESTACADA (LA PRIMERA ARRIBA)
+*/
+.grilla-ofertas .card-oferta:first-child {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  background: #eaf4fb;
+  border: 2px solid #cbd5e1;
+  padding: 25px;
 }
 
-.card-oferta img {
-  width: 280px;        
-  height: 210px;             
-  object-fit: contain;       
-  background: #eaf4f9;      
-  display: block;
-  margin: 10px auto 0;       
+.grilla-ofertas .card-oferta:first-child img {
+  width: 100%;
+  max-width: 700px;
+  height: 320px;
+  object-fit: contain;
+  background: #ffffff;
   border-radius: 8px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.grilla-ofertas .card-oferta:first-child .contenido-card {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* TARJETAS NORMALES (LAS 3 DE ABAJO) - AJUSTADAS A LA IMAGEN */
+
+.card-oferta {
+  background: #d1d9df;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.card-oferta:hover {
+  transform: translateY(-4px);  
+  box-shadow: 0 12px 20px -3px rgba(37, 99, 235, 0.15);
+  border-color: #93c5fd;
+}
+
+/* ESTILO CLAVE PARA QUE LA IMAGEN ENCAJE PERFECTAMENTE SIN ESPACIOS GRANDES */
+.card-oferta img {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  background: #ffffff;
+  display: block;
+  margin: 0 auto 15px auto;       
+  border-radius: 8px;
+  padding: 0;
 }
 
 .card-oferta h3 {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
 .card-oferta p {
   font-size: 13px;
-  color: #555;
-  margin-bottom: 15px;
-  min-height: 40px;
+  color: #64748b;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  flex-grow: 1;
 }
 
-/* BOTON RESERVAR */
+/* BOTON COMPRAR TECH */
 .btn-oferta {
-  display: inline-block;
-  background: #0ea5e9;
-  color: white;
-  padding: 10px 25px;
+  display: block;
+  width: 100%;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 12px;
+  text-align: center;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
   text-transform: uppercase;
 }
-.btn-oferta:hover { background:#0ea5e9; }
 
+.btn-oferta:hover { 
+  background: #2563eb; 
+}
+
+/* DISEÑO RESPONSIVO (MÓVILES Y TABLETS) */
 @media screen and (max-width: 992px) {
   .grilla-ofertas {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .card-oferta img {
-    width: 240px;
-    height: 180px;
-    object-fit: contain;
-    background: #eaf4f9;
   }
 }
 
 @media screen and (max-width: 768px) {
   .grilla-ofertas {
     grid-template-columns: 1fr;
-  }
-  .card-oferta img {
-    width: 100%;             
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: contain;
-    background: #eaf4f9;
   }
 }
 .footer{
