@@ -223,11 +223,11 @@ header {
     position: relative;
     height: 520px;
     background:
-        linear-gradient(180deg, rgba(0, 4, 14, 0.12), rgba(0, 4, 14, 0.08)),
+        linear-gradient(180deg, rgba(0, 4, 14, 0.178), rgba(0, 4, 14, 0.185)),
         url("../MEDIA/IMAGENES/fondodegalery.jpg") center/cover no-repeat;
     border-radius: 32px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(20, 42, 94, 0.14);
+    box-shadow: 0 30px 60px rgba(20, 42, 94, 0.253);
 }
 
 header::before {
@@ -266,10 +266,12 @@ header::before {
 }
 
 .contenido p {
+    font-size: 40px;
     max-width: 460px;
     line-height: 1.85;
     font-size: 1rem;
-    color: #dbeafe;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 #IMAGENES {
