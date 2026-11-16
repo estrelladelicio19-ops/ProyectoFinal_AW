@@ -32,5 +32,12 @@ document.querySelectorAll(".menus a").forEach(link=>{
 
     });
 
-
 });
+
+const scriptNavegacion = document.currentScript;
+if (scriptNavegacion && !document.querySelector("[data-language-app]")) {
+    const scriptIdioma = document.createElement("script");
+    scriptIdioma.src = new URL("app.js", scriptNavegacion.src).href;
+    scriptIdioma.dataset.languageApp = "";
+    document.body.appendChild(scriptIdioma);
+}
