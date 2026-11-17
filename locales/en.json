@@ -44,7 +44,24 @@
   "horario": "🕒 24-hour service",
   "siguenos": "Follow Us",
   "derechos": "© 2026 Minimarket \"Tech\" | All rights reserved.",
-  "botonAgregar": "Add to cart"
+  "botonAgregar": "Add to cart",
+  "titulo": "Tech world.",
+  "subtitulo": "HISTORY",
+  "parrafo": "We were born from a revolutionary idea: to transform the traditional corner store into an intelligent shopping ecosystem. Frustrated by long queues and outdated checkout processes, we decided to merge retail with cutting-edge technology. Today, thanks to the implementation of automated systems, artificial intelligence for inventory control, and instant payment platforms, we have become the preferred choice for those looking to optimize their time without sacrificing freshness or quality.",
+  "pageTitle": "Smart Experience",
+  "Mision": "MISSION",
+  "misionTexto": "Transform everyday shopping by offering a fast, smart, and automated experience, integrating cutting-edge technology to ensure the comfort, freshness, and efficiency our customers need.",
+  "vision": "VISION",
+  "visionTexto": "To become the country's leading technology minimarket, recognized for revolutionizing retail through artificial intelligence, instant digital payments, and smart inventory adapted to the future.",
+  "valores": "VALUES",
+  "innovacion": "📋INNOVATION",
+  "innovacionTexto": "We continuously implement advanced technology solutions to simplify the shopping process and keep retail at the forefront.",
+  "eficiencia": "⚖️EFFICIENCY",
+  "eficienciaTexto": "We save our customers time with automated systems that eliminate long queues and streamline every transaction from start to finish.",
+  "seguridad": "🛡️SECURITY",
+  "seguridadTexto": "We ensure a trustworthy environment with secure payment platforms and strict data protection across all digital interactions.",
+  "excelencia": "🎖️TECH EXCELLENCE",
+  "excelenciaTexto": "We exceed modern consumers' expectations with an intuitive platform, ongoing support, and smart quality control for every product."
 }
 
 
