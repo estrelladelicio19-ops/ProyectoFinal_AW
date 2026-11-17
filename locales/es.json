@@ -43,5 +43,23 @@
     "enlaces": "Enlaces",
     "horario": "🕒 Atención 24 horas",
     "siguenos": "Síguenos",
-    "derechos": "© 2026 Minimarket \"Tech\" | Todos los derechos reservados."
+    "derechos": "© 2026 Minimarket \"Tech\" | Todos los derechos reservados.",
+    "subtitulo": "HISTORIA",
+    "parrafo": "Nacimos de una idea revolucionaria: transformar la tienda de barrio tradicional en un ecosistema de compras inteligente. Frustrados por las largas filas y los procesos de pago obsoletos, decidimos fusionar el comercio minorista con tecnología de vanguardia. Hoy en día, gracias a la implementación de sistemas automatizados, inteligencia artificial para el control de inventario y plataformas de pago instantáneo, nos hemos convertido en la opción preferida para quienes buscan optimizar su tiempo sin sacrificar frescura ni calidad.",
+    "pageTitle": "Experiencia Inteligente",
+    "Mision": "MISIÓN",
+    "misionTexto": "Transformar las compras cotidianas ofreciendo una experiencia rápida, inteligente y automatizada, integrando tecnología de vanguardia para garantizar la comodidad, frescura y eficiencia que nuestros clientes necesitan.",
+    "vision": "VISIÓN",
+    "visionTexto": "Convertirnos en el minimarket tecnológico líder del país, reconocido por revolucionar el comercio minorista mediante inteligencia artificial, pagos digitales instantáneos e inventario inteligente adaptado al futuro.",
+    "valores": "VALORES",
+    "innovacion": "📋INNOVACIÓN",
+    "innovacionTexto": "Implementamos continuamente soluciones tecnológicas avanzadas para simplificar el proceso de compra y mantener el comercio minorista a la vanguardia.",
+    "eficiencia": "⚖️EFICIENCIA",
+    "eficienciaTexto": "Ahorramos tiempo a nuestros clientes con sistemas automatizados que eliminan las largas filas y agilizan cada transacción de principio a fin.",
+    "seguridad": "🛡️SEGURIDAD",
+    "seguridadTexto": "Garantizamos un entorno confiable con plataformas de pago seguras y una estricta protección de datos en todas las interacciones digitales.",
+    "excelencia": "🎖️EXCELENCIA TECNOLÓGICA",
+    "excelenciaTexto": "Superamos las expectativas de los consumidores modernos con una plataforma intuitiva, soporte continuo y control de calidad inteligente para cada producto."
+
+
 }
