@@ -43,5 +43,14 @@
     "enlaces": "Enlaces",
     "horario": "🕒 Atención 24 horas",
     "siguenos": "Síguenos",
-    "derechos": "© 2026 Minimarket \"Tech\" | Todos los derechos reservados."
-}
+    "derechos": "© 2026 Minimarket \"Tech\" | Todos los derechos reservados.",
+    "botonAgregar": "Agregar al carro",
+    "p1-cat1": "Ultraportátil de alto rendimiento con chip M2, pantalla Liquid Retina y hasta 18 horas de batería. Perfecta para productividad y diseño móvil.",
+    "p2-cat1":"Computadora de mesa todo en uno con pantalla FHD sin bordes, cámara emergente de privacidad y gran potencia para multitarea y diseño.",
+    "p3-cat1": "Teclado de perfil bajo con interruptores táctiles silenciosos, retroiluminación inteligente y conexión multidispositivo vía Bluetooth o receptor Logi Bolt.",
+    "p4-cat1": "Laptop ligera de 15.3 IPS ideal para estudio y trabajo de oficina con procesamiento rápido y almacenamiento SSD NVMe.",
+    "p5-cat1": "Pantalla táctil de 15.6 con procesador Core Ultra optimizado para funciones de Inteligencia Artificial y multitarea fluida.",
+    "p6-cat1": "Computadora equilibrada para uso profesional diario con gráficos integrados Radeon y diseño delgado.",
+    "p7-cat1": "Equipo empresarial robusto de 14 enfocado en seguridad de datos, durabilidad y trabajo corporativo.",
+    "p8-cat1": "Ultrabook premium con pantalla táctil 2K OLED, autonomía extendida y aceleración NPU para IA avanzada."
+    }
