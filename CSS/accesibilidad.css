@@ -11,6 +11,8 @@
 .accessibility-toggle {
     width: 58px;
     height: 58px;
+    display: grid;
+    place-items: center;
     border: none;
     border-radius: 50%;
     background: #1756a9;
@@ -24,6 +26,13 @@
 .accessibility-toggle:hover {
     background: #103e7c;
     transform: scale(1.07);
+}
+
+.accessibility-toggle:focus-visible,
+.accessibility-header button:focus-visible,
+.accessibility-options button:focus-visible {
+    outline: 3px solid #ffd84d;
+    outline-offset: 3px;
 }
 
 /* PANEL */
@@ -102,6 +111,20 @@
     cursor: pointer;
 }
 
+.accessibility-text-size {
+    display: block;
+    margin: 2px 0 0;
+    color: #555;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.accessibility-group button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
 .accessibility-group button:hover,
 .accessibility-group button[aria-pressed="true"] {
     background: #e1edff;
@@ -122,28 +145,41 @@
 
 /* MODOS DE ACCESIBILIDAD */
 
-/* AUMENTO DE TEXTO */
-html.a11y-large-text {
-    font-size: 112.5%;
-}
-
-html.a11y-extra-large-text {
-    font-size: 125%;
-}
-
 /* CONTRASTE ALTO */
 body.a11y-high-contrast {
     background: #000 !important;
     color: #ffff00 !important;
 }
 
-body.a11y-high-contrast :not(#accessibility-widget):not(#accessibility-widget *) {
+body.a11y-high-contrast :where(
+    header,
+    nav,
+    main,
+    section,
+    article,
+    aside,
+    footer,
+    div,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    span,
+    label
+) {
+    background-color: #000 !important;
     color: #ffff00 !important;
     border-color: #ffff00 !important;
 }
 
-body.a11y-high-contrast a {
+body.a11y-high-contrast a,
+body.a11y-high-contrast button {
     text-decoration: underline !important;
+    color: #ffff00 !important;
 }
 
 /* CONTRASTE OSCURO */
@@ -152,20 +188,34 @@ body.a11y-dark-contrast {
     color: #fff !important;
 }
 
-body.a11y-dark-contrast main,
-body.a11y-dark-contrast section,
-body.a11y-dark-contrast article,
-body.a11y-dark-contrast footer {
+body.a11y-dark-contrast :where(
+    header,
+    nav,
+    main,
+    section,
+    article,
+    aside,
+    footer,
+    div,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    span,
+    label
+) {
     background-color: #121212 !important;
     color: #fff !important;
 }
 
-body.a11y-dark-contrast p,
-body.a11y-dark-contrast h1,
-body.a11y-dark-contrast h2,
-body.a11y-dark-contrast h3,
-body.a11y-dark-contrast li {
+body.a11y-dark-contrast a,
+body.a11y-dark-contrast button {
     color: #fff !important;
+    border-color: #777 !important;
 }
 
 /* ESCALA DE GRISES */
