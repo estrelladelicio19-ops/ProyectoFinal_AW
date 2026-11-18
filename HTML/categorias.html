@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
     <link rel="stylesheet" href="../CSS/categorias.css">
+    <link rel="stylesheet" href="../CSS/accesibilidad.css">
 </head>
 
 <body>
@@ -588,6 +589,83 @@
     </footer>
 
     <script src="../JS/inicio.js"></script>
+    <script src="../JS/accesibilidad.js"></script>
+    <div id="accessibility-widget">
+
+    <button
+        id="accessibility-toggle"
+        class="accessibility-toggle"
+        aria-label="Abrir opciones de accesibilidad"
+        aria-expanded="false"
+        aria-controls="accessibility-panel"
+        title="Accesibilidad">
+
+        ♿
+    </button>
+
+    <div id="accessibility-panel"
+         class="accessibility-panel"
+         role="region"
+         aria-label="Opciones de accesibilidad"
+         hidden>
+
+        <div class="accessibility-header">
+            <div>
+                <h2>Accesibilidad</h2>
+                <p>Personaliza tu experiencia</p>
+            </div>
+
+            <button id="accessibility-close"
+                    aria-label="Cerrar panel">
+                ✕
+            </button>
+        </div>
+
+        <div class="accessibility-options">
+
+            <div class="accessibility-group">
+                <h3>Tamaño del texto</h3>
+                <div class="accessibility-buttons">
+                    <button data-action="decrease">A−</button>
+                    <button data-action="increase">A+</button>
+                </div>
+            </div>
+
+            <div class="accessibility-group">
+                <h3>Contraste y colores</h3>
+                <button data-action="high-contrast">
+                    ◐ Contraste alto
+                </button>
+                <button data-action="dark-contrast">
+                    🌙 Contraste oscuro
+                </button>
+                <button data-action="grayscale">
+                    ◑ Escala de grises
+                </button>
+            </div>
+
+            <div class="accessibility-group">
+                <h3>Lectura</h3>
+                <button data-action="readable-font">
+                    Aa Fuente legible
+                </button>
+                <button data-action="underline-links">
+                    ↗ Subrayar enlaces
+                </button>
+                <button data-action="spacing">
+                    ↔ Espaciado del texto
+                </button>
+            </div>
+
+            <button id="accessibility-reset"
+                    class="accessibility-reset">
+                ↻ Restablecer configuración
+            </button>
+
+        </div>
+
+    </div>
+</div>
 </body>
 
 </html>
