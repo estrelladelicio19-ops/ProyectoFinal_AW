@@ -70,6 +70,15 @@
             <button class="btn-cat-top" onclick="document.getElementById('smarthome').scrollIntoView({behavior: 'smooth'});">Smart Home y Oficina</button>
         </section>
 
+        <section class="selector-region" aria-label="Seleccionar región">
+            <label for="region">Seleccionar región:</label>
+            <select id="region">
+                <option value="es-PE">Perú</option>
+                <option value="es-ES">España</option>
+                <option value="en-US">Estados Unidos</option>
+            </select>
+        </section>
+
         <!-- Sección 1: Computación y Laptos -->
         <section id="computacion" class="seccion-categoria">
             <h2 data-i18n="compLap">Computación y Laptos</h2>
@@ -589,6 +598,7 @@
     </footer>
 
     <script src="../JS/inicio.js"></script>
+    <script src="../JS/categorias-region.js"></script>
     <script src="../JS/accesibilidad.js"></script>
     <div id="accessibility-widget">
 

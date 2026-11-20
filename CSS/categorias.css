@@ -210,6 +210,51 @@ body{
     transform: scale(0.95);
 }
 
+.selector-region {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: -20px 0 35px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.selector-region select {
+    min-width: 190px;
+    padding: 10px 12px;
+    border: 2px solid #0ea5e9;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #0b1f33;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.fecha-hora-producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 0 0 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #eaf7fc;
+    border-left: 4px solid #0ea5e9;
+}
+
+.fecha-hora-producto span {
+    display: block;
+    color: #365466;
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+.fecha-hora-producto strong {
+    display: block;
+    color: #0b1f33;
+    font-size: 12px;
+}
+
 /* Secciones de Categorías y Títulos */
 .seccion-categoria {
     margin-bottom: 60px;
