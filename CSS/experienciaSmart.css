@@ -613,7 +613,7 @@ body{
 
 /* TABLET Y MOVIL: ajustes responsive del logo y menú */
 
-@media(max-width:768px){
+@media(max-width:1277px){
 
     .historia-layout{
         width: min(100% - 30px, 560px);

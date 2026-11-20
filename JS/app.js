@@ -36,6 +36,12 @@ function crearSelectorIdioma() {
             color: #333;
             cursor: pointer;
         }
+
+        @media (max-width: 1272px) {
+            .idioma-selector {
+                right: 78px;
+            }
+        }
     `;
     document.head.appendChild(estilos);
 
